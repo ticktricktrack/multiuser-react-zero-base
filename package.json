@@ -10,9 +10,11 @@
     "format": "biome format --write"
   },
   "dependencies": {
+    "@varlock/nextjs-integration": "^0.3.6",
     "next": "16.2.4",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "varlock": "^0.9.1"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
@@ -20,6 +22,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@varlock/1password-plugin": "^0.3.5",
     "tailwindcss": "^4",
     "typescript": "^5"
   },
@@ -30,5 +33,8 @@
   "trustedDependencies": [
     "sharp",
     "unrs-resolver"
-  ]
+  ],
+  "overrides": {
+    "@next/env": "npm:@varlock/nextjs-integration"
+  }
 }
